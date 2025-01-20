@@ -3,9 +3,9 @@
         <div class="card">
             <div class="card-header">
                 <?php
-                    if($database->connection){
-                        echo "ok, connectie gemaakt met de database";
-                    }
+                if($database->connection){
+                    echo "ok, connectie gemaakt met de database";
+                }
                 ?>
                 <h4>Profile Visit</h4>
             </div>
@@ -28,7 +28,7 @@
                             <svg class="bi text-primary" width="32" height="32" fill="blue"
                                  style="width:10px">
                                 <use
-                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"/>
+                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">Europe</h5>
                         </div>
@@ -46,7 +46,7 @@
                             <svg class="bi text-success" width="32" height="32" fill="blue"
                                  style="width:10px">
                                 <use
-                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"/>
+                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">America</h5>
                         </div>
@@ -64,7 +64,7 @@
                             <svg class="bi text-danger" width="32" height="32" fill="blue"
                                  style="width:10px">
                                 <use
-                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"/>
+                                        xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">Indonesia</h5>
                         </div>
@@ -127,5 +127,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>

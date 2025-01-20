@@ -1,12 +1,12 @@
 <?php
-require_once ("config.php");
+require_once("config.php");
 class Database
 {
-    /* properties (props) */
+    /* properties (props)*/
     public $connection;
-    /* methods (functions) */
+    /* methods (functions)*/
     public function open_db_connection(){
-        $this->connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME); /* dit is enkel voor MySQL database's */
+        $this->connection = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
         if(mysqli_connect_errno()){
             printf("Connectie is mislukt: %s\n", mysqli_connect_error());
             exit();
@@ -19,13 +19,16 @@ class Database
     }
     public function confirm_query($result){
         if(!$result){
-            die("Querry kan niet worden uitgevoerd" . $this->connection->error);
+            die("Query kan niet worden uitgevoerd" . $this->connection->error);
         }
     }
-    /* Default constructor */
+
+    /* default constructor */
     function __construct(){
         $this->open_db_connection();
     }
+
+
 
 }
 $database = new Database();
